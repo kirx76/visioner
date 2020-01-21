@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Начальный текст</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="InputText"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Ключ-слово</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="Kword"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ConvertButton">
+      <property name="text">
+       <string>Закодировать</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="DeconvertButton">
+      <property name="text">
+       <string>Декодировать</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Зашифрованный текст</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="OutputText"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="loadFromFile">
+      <property name="text">
+       <string>Загрузить из файла начальный текст</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="saveToFile">
+      <property name="text">
+       <string>Сохранить в файл зашифрованный текст</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="menuVis">
+   <property name="text">
+    <string>Vigenère</string>
+   </property>
+  </action>
+  <action name="menuCes">
+   <property name="text">
+    <string>Caesar</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
